@@ -5,7 +5,7 @@
 #创建空字典方式一
 from turtle import home
 
-
+#创建空字典方式一
 name = {}
 print(name)
 #创建空字典方式二
