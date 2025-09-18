@@ -23,16 +23,21 @@ print(peoples)
 peoples['age'] = 20 #修改键值对
 print(peoples)
 
+sorted(peoples) #排序
+print(sorted(peoples.keys()))  #等同于print(sorted(peoples))
+print(sorted(peoples.items()))
+
 del peoples['sex'] #删除键值对
 print(peoples)
-
 
 #获取字典中的值
 print(peoples['name'])
 #如果键不存在，会报错
 print(peoples['country'])
 #为了避免报错，我们可以使用get()方法
-print(peoples.get('name'))
-#如果键不存在，get()方法会返回None
 print(peoples.get('country'))
+
+for k,v in peoples.items():
+    print(k,v)
+
 
