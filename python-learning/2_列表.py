@@ -29,3 +29,24 @@ print(min(list1)) #获取列表最小值
 print(sorted(list1)) #对列表进行排序
 print(sorted(list1, reverse=True)) #对列表进行降序排序
 
+for i,v in enumerate(list1): 
+    print(i,v)  #i是索引，v是元素
+
+#列表的切片
+print(list1[1:5]) #获取索引1到索引4的元素
+print(list1[:5]) #获取索引0到索引4的元素
+print(list1[5:]) #获取索引5到列表末尾的元素
+
+#同时遍历两个列表
+question = ['姓名', '年龄', '性别']
+answer = ['张三', '18', '男']
+for q,a in zip(question,answer):
+    print(f'What is your {q}? It is {a}')
+
+#同时遍历两个列表生成字典
+question = ['姓名', '年龄', '性别']
+answer = ['张三', '18', '男']
+peoples = {q:a for q,a in zip(question,answer)}
+print(peoples)
+
+
