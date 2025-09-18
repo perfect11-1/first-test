@@ -17,4 +17,5 @@
     "python.testing.pytestArgs": [
         "."
     ],
+    "codingcopilot.enableFloatShortcut": true,
 }

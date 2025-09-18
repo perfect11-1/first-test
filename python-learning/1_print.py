@@ -38,6 +38,25 @@ fruit = ['apple', 'orange', 'banana', 'peach']
 print("我喜欢吃{2}, {0}, {1}, {3}这些水果".format(fruit[0],fruit[1],fruit[2],fruit[3])) 
 print(f"我喜欢吃{fruit[0]}, {fruit[1]}, {fruit[2]}, {fruit[3]}这些水果") 
 
+
+
+#生成平方立方表
+"""
+打印从1到9的数字及其平方和立方，格式化为对齐的表格。
+输出格式为：数字（2位宽度）、平方（3位宽度）、立方（4位宽度）。
+"""
+for x in range(1,10):
+    print('{0:2d} {1:3d} {2:4d}'.format(x, x*x, x*x*x))
+
+#另一种方式生成平方立方表
+"""
+使用repr()函数将数字转换为字符串，并使用rjust()方法右对齐输出，
+确保数字在指定宽度内右对齐,其中rjust()方法的第一个参数为指定宽度。
+"""
+for x in range(1,10):
+    print(repr(x).rjust(2), repr(x*x).rjust(3), end=' ')
+    print(repr(x*x*x).rjust(4))
+
 # 测试中文打印
 print('测试中文打印能力')
 # 获取当前文件编码
