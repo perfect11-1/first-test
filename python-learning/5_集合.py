@@ -1,8 +1,11 @@
 #集合和列表相比,存在两个特点：1.集合是无序的，2.集合中的元素是唯一的，不重复的，哪怕赋值时配置了重复的值，但实际上重复的值会被忽略
 #创建空集合：
-name5 = set()
-name5.add('a')
-print(name5)
+a = set()
+a.add('abc')
+print(a)
+
+a1 = set('abracadabra')
+print(a1)
 
 # 创建两个集合
 name = {1,2,1,1,2,3,4,5}  # 重复元素会被自动去除
@@ -52,4 +55,5 @@ print(name13)
 # 判断是否为超集
 name14 = name2.issuperset(name1)  # 判断name2是否是name1的超集
 print(name14)
+
 
