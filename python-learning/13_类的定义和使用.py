@@ -29,8 +29,7 @@ class Employee:
     def work(self):
         print(f'{self.name}总是在努力工作')
     def promote(self, new_position):
-        self.position = new_position
-        print(f'{self.name}的职位变更为{self.position}')
+        print(f'{self.name}的职位变更为{new_position}')
     def raise_salary(self, amount):
         old_salary = self.salary
         self.salary += amount
