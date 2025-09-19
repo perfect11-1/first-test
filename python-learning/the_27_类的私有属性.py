@@ -25,7 +25,7 @@ except Exception as e:
     print("不能在类外部访问私有属性")
 
 try:
-    print(p.__get_age())
+    p.__get_age()
 except Exception as e:
     print(f'报错信息：{e}') 
     print("不能在类外部访问私有方法")
