@@ -1,3 +1,4 @@
+
 distance = 2 #距离2公里
 time_abundant = 30 #时间充裕
 weather_if_good = True #天气是否好

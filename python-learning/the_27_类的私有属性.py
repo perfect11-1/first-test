@@ -1,4 +1,4 @@
-#类的私有属性和私有方法只能在类内部访问，不能在类外部访问
+#类的私有属性和私有方法只能在类内部访问，不能在类外部访问，其定义方法是以两个下划线开头，如__private_attrs。
 class Person:
     def __init__(self, name, age):
         self.name = name
