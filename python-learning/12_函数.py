@@ -4,6 +4,7 @@ def test():  #无参函数
 test()
 
 print('下一个样例#################################')
+
 def is_orange(f):  #有参函数
     if f == 'orange':
         return True

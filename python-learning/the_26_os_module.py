@@ -27,6 +27,6 @@ print(home_directory)
 os.system('dir')  # 运行一个系统命令
 
 # 创建一个新文件
-with open('new_file.txt', 'w') as f:
-    f.write('这是一个新文件')
+with open('./python-learning/new_file.txt', 'a') as f:
+    f.write('\n这是一个新文件')
 print(os.listdir())  # 确认文件已被创建
